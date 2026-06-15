@@ -3,16 +3,20 @@ namespace CSharpStudy {
         static void Main(string[] args) {
             while (true) {
                 InputHelper.ClearConsole();
-                Console.WriteLine("Главное меню для проверки уроков C#:");
-                Console.WriteLine("1. \"Урок 1\";");
-                Console.WriteLine("2. \"Урок 2\";");
-                Console.WriteLine("3. \"Урок 3\";");
-                Console.WriteLine("4. \"Урок 4\";");
-                Console.WriteLine("5. \"Урок 5\";");
-                Console.WriteLine("6. \"Урок 6\";");
-                Console.WriteLine("8. \"Урок 8\".");
+                Console.WriteLine("Главное меню для проверки заданий по C#:");
+                Console.WriteLine("1.  \"Урок 1\";");
+                Console.WriteLine("2.  \"Урок 2\";");
+                Console.WriteLine("3.  \"Урок 3\";");
+                Console.WriteLine("4.  \"Урок 4\";");
+                Console.WriteLine("5.  \"Урок 5\";");
+                Console.WriteLine("6.  \"Урок 6\";");
+                Console.WriteLine("7.  \"Урок 7\";");
+                Console.WriteLine("8.  \"Урок 8\".");
+                Console.WriteLine("9.  \"Практ 1\".");
+                Console.WriteLine("10. \"Практ 2\".");
+                Console.WriteLine("11. \"Практ 3\".");
 
-                switch (InputHelper.GetMenuPositiveInteger("\nВведите номер урока (0 - выход): ", "0, 1, 2, 3, 4, 5, 6 или 8")) {
+                switch (InputHelper.GetMenuPositiveInteger("\nВведите номер урока (0 - выход): ", "0-11")) {
                     case 0:
                         return;
                     case 1:
@@ -33,8 +37,20 @@ namespace CSharpStudy {
                     case 6:
                         C_urok_06.Run();
                         break;
+                    case 7:
+                        C_urok_07.Run();
+                        break;
                     case 8:
                         C_urok_08.Run();
+                        break;
+                    case 9:
+                        C_pract_01.Run();
+                        break;
+                    case 10:
+                        C_pract_02.Run();
+                        break;
+                    case 11:
+                        C_pract_03.Run();
                         break;
                     default:
                         Console.WriteLine("Урок с таким номером не найден!");
@@ -45,7 +61,7 @@ namespace CSharpStudy {
         }
     }
 
-    internal class TaskResetException : Exception { }
+    internal class TaskResetException : Exception {}
 
     internal static class InputHelper {
         public static string GetString() {
@@ -60,7 +76,7 @@ namespace CSharpStudy {
                 Console.Write(currentPrompt);
                 string input = GetString();
                 if (input.Length > 0) return input;
-                if (AskStopTask()) throw new TaskResetException();
+                if (AskStopTask()) throw new Exception();
                 RewriteInputLine(line);
                 currentPrompt = AddHint(prompt, hint);
             }
@@ -90,7 +106,7 @@ namespace CSharpStudy {
                 Console.Write(currentPrompt);
                 string input = GetString();
                 if (input.Length == 0) {
-                    if (AskStopTask()) throw new TaskResetException();
+                    if (AskStopTask()) throw new Exception();
                     RewriteInputLine(line);
                     currentPrompt = AddHint(prompt, hint);
                     continue;
@@ -112,7 +128,7 @@ namespace CSharpStudy {
                 Console.Write(currentPrompt);
                 string input = GetString();
                 if (input.Length == 0) {
-                    if (AskStopTask()) throw new TaskResetException();
+                    if (AskStopTask()) throw new Exception();
                     RewriteInputLine(line);
                     currentPrompt = AddHint(prompt, hint);
                     continue;
@@ -134,7 +150,7 @@ namespace CSharpStudy {
                 Console.Write(currentPrompt);
                 string input = GetString().Replace('.', ',');
                 if (input.Length == 0) {
-                    if (AskStopTask()) throw new TaskResetException();
+                    if (AskStopTask()) throw new Exception();
                     RewriteInputLine(line);
                     currentPrompt = AddHint(prompt, hint);
                     continue;
@@ -156,7 +172,7 @@ namespace CSharpStudy {
                 Console.Write(currentPrompt);
                 string input = GetString().Replace('.', ',');
                 if (input.Length == 0) {
-                    if (AskStopTask()) throw new TaskResetException();
+                    if (AskStopTask()) throw new Exception();
                     RewriteInputLine(line);
                     currentPrompt = AddHint(prompt, hint);
                     continue;
@@ -178,7 +194,7 @@ namespace CSharpStudy {
                 Console.Write(currentPrompt);
                 string input = GetString();
                 if (input.Length == 0) {
-                    if (AskStopTask()) throw new TaskResetException();
+                    if (AskStopTask()) throw new Exception();
                     RewriteInputLine(line);
                     currentPrompt = AddHint(prompt, hint);
                     continue;
