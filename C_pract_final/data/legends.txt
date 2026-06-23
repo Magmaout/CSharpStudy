@@ -1,0 +1,5 @@
+Sword of Destiny|100|Legendary|Drains life from the wielder|true
+Crown of Shadows|90|Legendary|Controls the wearer's mind|true
+Ring of Power|95|Legendary|Corrupts the soul over time|true
+Crystal of Light|75|Epic|None|false
+Shield of Heroes|65|Rare|None|false

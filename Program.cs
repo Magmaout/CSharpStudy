@@ -15,8 +15,9 @@ namespace CSharpStudy {
                 Console.WriteLine("9.  \"Практ 1\".");
                 Console.WriteLine("10. \"Практ 2\".");
                 Console.WriteLine("11. \"Практ 3\".");
+                Console.WriteLine("12. \"Практ Final\".");
 
-                switch (InputHelper.GetMenuPositiveInteger("\nВведите номер урока (0 - выход): ", "0-11")) {
+                switch (InputHelper.GetMenuPositiveInteger("\nВведите номер урока (0 - выход): ", "0-12")) {
                     case 0:
                         return;
                     case 1:
@@ -51,6 +52,9 @@ namespace CSharpStudy {
                         break;
                     case 11:
                         C_pract_03.Launcher.Run();
+                        break;
+                    case 12:
+                        C_pract_final.Launcher.Run();
                         break;
                     default:
                         Console.WriteLine("Урок с таким номером не найден!");

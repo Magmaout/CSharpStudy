@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfAntiqueArtifact xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AntiqueArtifact>
+    <Id>1</Id>
+    <Name>Amulet of Yendor</Name>
+    <PowerLevel>95</PowerLevel>
+    <Rarity>Legendary</Rarity>
+    <Age>1200</Age>
+    <OriginRealm>Arcadia</OriginRealm>
+  </AntiqueArtifact>
+  <AntiqueArtifact>
+    <Id>2</Id>
+    <Name>Ancient Staff</Name>
+    <PowerLevel>75</PowerLevel>
+    <Rarity>Epic</Rarity>
+    <Age>800</Age>
+    <OriginRealm>Eldoria</OriginRealm>
+  </AntiqueArtifact>
+  <AntiqueArtifact>
+    <Id>3</Id>
+    <Name>Mystic Orb</Name>
+    <PowerLevel>60</PowerLevel>
+    <Rarity>Rare</Rarity>
+    <Age>500</Age>
+    <OriginRealm>Shadowmere</OriginRealm>
+  </AntiqueArtifact>
+  <AntiqueArtifact>
+    <Id>4</Id>
+    <Name>Old Tome</Name>
+    <PowerLevel>30</PowerLevel>
+    <Rarity>Common</Rarity>
+    <Age>200</Age>
+    <OriginRealm>Arcadia</OriginRealm>
+  </AntiqueArtifact>
+</ArrayOfAntiqueArtifact>

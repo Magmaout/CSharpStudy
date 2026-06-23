@@ -1,0 +1,34 @@
+[
+  {
+    "Id": 5,
+    "Name": "Hyper Phase Blaster",
+    "PowerLevel": 88,
+    "Rarity": "Epic",
+    "TechLevel": 9.5,
+    "Manufacturer": "TechMage Inc."
+  },
+  {
+    "Id": 6,
+    "Name": "Quantum Shield",
+    "PowerLevel": 70,
+    "Rarity": "Rare",
+    "TechLevel": 7.2,
+    "Manufacturer": "NanoDynamics"
+  },
+  {
+    "Id": 7,
+    "Name": "Plasma Cutter",
+    "PowerLevel": 45,
+    "Rarity": "Common",
+    "TechLevel": 5.0,
+    "Manufacturer": "IndustrialMage Co."
+  },
+  {
+    "Id": 8,
+    "Name": "Neural Interface",
+    "PowerLevel": 82,
+    "Rarity": "Epic",
+    "TechLevel": 8.8,
+    "Manufacturer": "CyberArcane Ltd."
+  }
+]
